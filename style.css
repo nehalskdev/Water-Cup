@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #262626;
+}
+body {
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+}
+.cup {
+  width: 200px;
+  height: 220px;
+
+  border: 6px solid #262626;
+  border-top: 2px solid transparent;
+  border-radius: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  box-shadow: 0 0 0 6px #fff, 0 20px 30px rgba(0, 0, 0, 1);
+  background: url(https://image.ibb.co/fmHm66/wave.png);
+
+  background-repeat: repeat-x;
+
+  animation: animate 10s linear infinite;
+}
+.handle {
+  position: absolute;
+  transform: translate(150px, -20px);
+  height: 100px;
+  width: 100px;
+  border: 6px solid white;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+span {
+  position: fixed;
+  top: 20%;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow";
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 0 80px;
+  }
+  100% {
+    background-position: 500px -40px;
+  }
+}

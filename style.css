@@ -17,14 +17,13 @@ body {
 
   border: 6px solid #262626;
   border-top: 2px solid transparent;
-  border-radius: 15px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+ border-radius: 5px 5px 15px 15px;
 
   box-shadow: 0 0 0 6px #fff, 0 20px 30px rgba(0, 0, 0, 1);
   background: url(https://image.ibb.co/fmHm66/wave.png);
 
   background-repeat: repeat-x;
+  background-size: cover;
 
   animation: animate 10s linear infinite;
 }
@@ -48,13 +47,37 @@ span {
 }
 
 @keyframes animate {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 0 80px;
-  }
-  100% {
-    background-position: 500px -40px;
-  }
+	0% {
+		background-position: 0 150px;
+	}
+	10% {
+		background-position: 84px 150px;
+	}
+	20% {
+		background-position: 168px 112.5px;
+	}
+	30% {
+		background-position: 252px 75px;
+	}
+	40% {
+		background-position: 336px 37.5px;
+	}
+  50% {
+		background-position: 420px 0px;
+	}
+	60% {
+		background-position: 504px 37.5px;
+	}
+	70% {
+		background-position: 588px 75px;
+	}
+	80% {
+		background-position: 672px 112.5px;
+	}
+	90% {
+		background-position: 756px 150px;
+	}
+	100% {
+		background-position: 845px 150px;
+	}
 }
